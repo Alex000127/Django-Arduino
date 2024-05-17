@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control LED</title>
+    <script>
+        function sendCommand(command) {
+            fetch(`/led/control_led/?command=${command}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("response").innerText = data.response;
+                });
+        }
+    </script>
+</head>
+<body>
+    <h1>Controla el LED del Arduino</h1>
+    <button onclick="sendCommand('LED_ON')">Encender LED</button>
+    <button onclick="sendCommand('LED_OFF')">Apagar LED</button>
+    <p id="response"></p>
+</body>
+</html>

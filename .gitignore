@@ -1,0 +1,12 @@
+# Excluir el entorno virtual
+venv/
+# Para asegurarte de excluir diferentes nombres de entornos virtuales
+.env/
+*.env
+env/
+ENV/
+
+# Excluir archivos de configuración de entornos virtuales
+.pipfile
+.pipfile.lock
+.poetry/
