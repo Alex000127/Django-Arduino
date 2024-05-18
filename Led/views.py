@@ -4,7 +4,7 @@ from .arduino_controller import ArduinoController
 import serial
 
 # Create your views here.
-SERIAL_PORT = 'COM7'  # Puerto conde esta conectado el Arduino
+SERIAL_PORT = 'COM3'  # Puerto conde esta conectado el Arduino
 BAUD_RATE = 9600 # bps velocidad podriamos decir
 
 arduino = ArduinoController(SERIAL_PORT, BAUD_RATE)
