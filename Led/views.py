@@ -8,7 +8,7 @@ SERIAL_PORT = 'COM3'  # Puerto conde esta conectado el Arduino
 BAUD_RATE = 9600 # bps velocidad podriamos decir
 
 arduino = ArduinoController(SERIAL_PORT, BAUD_RATE)
-
+qq1``
 # Vista general 
 def prueba(request): 
     if request.method == "POST":
